@@ -272,7 +272,7 @@ app.prepare().then(async () => {
 
     h2Server.on("error", (err) => console.error(err));
 
-    h2Server.listen(serverPort, "127.0.0.1", () => {
+    h2Server.listen(serverPort, "0.0.0.0", () => {
       console.log(
         chalk.green(
           `[✅] Ready on https://127.0.0.1:${serverPort}/ using HTTP/2 server`
