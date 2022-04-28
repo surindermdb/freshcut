@@ -3,7 +3,7 @@
     GiftCardWidget: null,
 
     // Host: "https://greeting-cards-freshcut.onthemap.com",
-    Host: "https://0904-150-129-199-159.ngrok.io",
+    Host: "https://freshcut.vercel.app",
 
     Routes: {
       Settings: "/api/widget",
@@ -25,11 +25,11 @@
     CDN: {
       // Style:
       //   "https://otm-cdn-private.s3.amazonaws.com/gift-card-generator.min.css",
-       Style: "https://0904-150-129-199-159.ngrok.io/public/gift-card-generator.min.css",
+       Style: "https://freshcut.vercel.app/public/gift-card-generator.min.css",
       // // Script:
         // "https://otm-cdn-private.s3.amazonaws.com/giftcard-generator.min.js",
       // Style: "http://127.0.0.1:8080/gift-card-generator.min.css",
-      Script: "https://0904-150-129-199-159.ngrok.io/giftcard-generator.min.js",
+      Script: "https://freshcut.vercel.app/giftcard-generator.min.js",
     },
 
     Name: "GiftCardWidget",
