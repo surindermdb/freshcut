@@ -280,8 +280,8 @@ app.prepare().then(async () => {
       );
     });
   } else {
-    server.listen(serverPort, () => {
-      console.log(chalk.green(`[✅] Ready on http://localhost:${serverPort}`));
+    server.listen(8081, () => {
+      console.log(chalk.green(`[✅] Ready on http://localhost:8081`));
     });
   }
 });
