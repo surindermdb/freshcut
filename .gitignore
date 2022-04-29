@@ -2,8 +2,8 @@
 # .env
 
 # Dependency directory
-/node_modules
-/.pnp
+node_modules
+.pnp
 .pnp.js
 
 # Test coverage directory
@@ -23,11 +23,11 @@ logs
 config/tunnel.pid
 
 # next build output
-/.next/
-/out/
+.next/
+out/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
