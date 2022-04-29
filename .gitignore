@@ -24,10 +24,7 @@ config/tunnel.pid
 
 # next build output
 .next/
-out/
-
-# production
-build/
+output/
 
 # misc
 .DS_Store
