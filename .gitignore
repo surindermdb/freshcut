@@ -10,6 +10,9 @@ coverage
 # Ignore Apple macOS Desktop Services Store
 .DS_Store
 
+# local env files
+.env
+
 # Logs
 logs
 *.log
@@ -19,3 +22,6 @@ config/tunnel.pid
 
 # next build output
 .next/
+
+# vercel
+.vercel
