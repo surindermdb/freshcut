@@ -272,16 +272,16 @@ app.prepare().then(async () => {
 
     h2Server.on("error", (err) => console.error(err));
 
-    h2Server.listen(process.env.PORT || 5000, "0.0.0.0", () => {
+    h2Server.listen(serverPort, "0.0.0.0", () => {
       console.log(
         chalk.green(
-          `[✅] Ready on https://0.0.0.0:5000}/ using HTTP/2 server`
+          `[✅] Ready on https://0.0.0.0:8081}/ using HTTP/2 server`
         )
       );
     });
   } else {
-    server.listen(process.env.PORT || 5000,"0.0.0.0", () => {
-      console.log(chalk.green(`[✅] Ready on http://localhost:5000`));
+    server.listen(serverPort,"0.0.0.0", () => {
+      console.log(chalk.green(`[✅] Ready on http://localhost:8081`));
     });
   }
 });
