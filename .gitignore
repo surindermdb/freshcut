@@ -2,7 +2,7 @@
 # .env
 
 # Dependency directory
-node_modules
+/node_modules
 /.pnp
 .pnp.js
 
@@ -23,7 +23,7 @@ logs
 config/tunnel.pid
 
 # next build output
-.next/
+/.next/
 /out/
 
 # production
