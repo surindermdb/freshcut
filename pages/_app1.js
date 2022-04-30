@@ -144,8 +144,8 @@ class MyApp extends App {
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            apiKey: "c565e74622748fad9d9351ddcd523f46",
-            shopOrigin: "fresh-greeting-card.myshopify.com",
+            apiKey: API_KEY,
+            shopOrigin: shopOrigin,
             forceRedirect: true,
           }}
         >

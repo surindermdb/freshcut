@@ -141,10 +141,10 @@ class MyApp extends App {
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
-            apiKey: "c565e74622748fad9d9351ddcd523f46",
+            host: host,
+            apiKey: API_KEY,
             forceRedirect: true,
-            shopOrigin: "fresh-greeting-card.myshopify.com",
+            shopOrigin: shopOrigin,
           }}
         >
           {this.renderApp()}
@@ -155,7 +155,6 @@ class MyApp extends App {
 }
 
 MyApp.getInitialProps = async ({ ctx }) => {
-  console.log("ctx.query.host",ctx.query.host);
   return {
     host: ctx.query.host,
   };
