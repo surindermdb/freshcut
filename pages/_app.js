@@ -141,7 +141,7 @@ class MyApp extends App {
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
+            host: host,
             apiKey: "c565e74622748fad9d9351ddcd523f46",
             forceRedirect: true,
             shopOrigin: "fresh-greeting-card.myshopify.com",
@@ -156,7 +156,7 @@ class MyApp extends App {
 
 MyApp.getInitialProps = async ({ ctx }) => {
   return {
-    host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
+    host: "https://freshcut.vercel.app",
     shopOrigin: "fresh-greeting-card.myshopify.com"
   };
 };
