@@ -155,6 +155,7 @@ class MyApp extends App {
 }
 
 MyApp.getInitialProps = async ({ ctx }) => {
+  console.log("ctx.query.host",ctx.query.host);
   return {
     host: ctx.query.host,
   };
