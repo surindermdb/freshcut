@@ -2,6 +2,7 @@ const { parsed: localEnv } = require("dotenv").config();
 
 const webpack = require("webpack");
 const path = require("path");
+const { printSourceLocation } = require("graphql");
 
 const apiKey = JSON.stringify(process.env.SHOPIFY_API_KEY);
 const host = JSON.stringify(process.env.HOST);
@@ -9,6 +10,17 @@ const shopifyHost = JSON.stringify(process.env.SHOPIFY_HOST);
 
 module.exports = {
   compress: false,
+  env:{
+    API_KEY: process.env.API_KEY, 
+    HOST: process.env.HOST, 
+    SHOPIFY_HOST: process.env.SHOPIFY_HOST,
+    SHOP:process.env.SHOP,
+    DB_URL:process.env.DB_URL,
+    
+  },
+  images:{
+    domains:['cdn.shopify.com']
+  },
   webpack: (config) => {
     const env = { API_KEY: apiKey, HOST: host, SHOPIFY_HOST: shopifyHost };
     config.plugins.push(new webpack.DefinePlugin(env));
@@ -37,7 +49,5 @@ module.exports = {
 
     return config;
   },
-  env:{
-    API_KEY: apiKey, HOST: host, SHOPIFY_HOST: shopifyHost
-  }
+  
 };

@@ -67,7 +67,6 @@ class MyApp extends App {
    * Fetch shop
    */
   async fetchShop() {
-
     
     return new Promise(async (resolve, reject) => {
       this.setState({ fetchingShop: true });
@@ -142,9 +141,9 @@ class MyApp extends App {
         <Provider
           config={{
             host: host,
-            apiKey: "c565e74622748fad9d9351ddcd523f46",
+            apiKey: API_KEY,
             forceRedirect: true,
-            shopOrigin: "fresh-greeting-card.myshopify.com",
+            shopOrigin: shopOrigin,
           }}
         >
           {this.renderApp()}
@@ -157,7 +156,7 @@ class MyApp extends App {
 MyApp.getInitialProps = async ({ ctx }) => {
   return {
     host: "https://freshcut.vercel.app",
-    shopOrigin: "fresh-greeting-card.myshopify.com"
+    shopOrigin:"fresh-greeting-card.myshopify.com"
   };
 };
 

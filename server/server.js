@@ -199,7 +199,6 @@ app.prepare().then(async () => {
           // Redirects to shopify app
           ctx.redirect(redirectUrl);
         } catch (err) {
-          console.log("existingShopModel", "sdfsdfsdfsdfsdf")
           console.log(err);
           //logger.error(err);
         }
@@ -207,8 +206,6 @@ app.prepare().then(async () => {
         // Redirect to app with shop parameter upon auth
         ctx.redirect(redirectUrl);
       },
-    }).catch((err)=>{
-      console.log("existingShopModel", "sdfsdfsdfsdfsfxcvxvxcvxcvxcvxcvxvxcv==========================")
     })
   );
 
