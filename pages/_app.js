@@ -135,7 +135,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, host } = this.props;
-    console.log("===========",host);
+    console.log("===========",process.env.SHOPIFY_HOST);
     return (
       <AppProvider i18n={translations}>
         <Provider
