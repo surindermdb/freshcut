@@ -134,13 +134,13 @@ class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps, host,shopOrigin } = this.props;
+    const { Component, pageProps, host } = this.props;
     console.log("===========",host);
     return (
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            host: host,
+            host: process.env.SHOPIFY_HOST,
             apiKey: API_KEY,
             forceRedirect: true,
             shopOrigin: shopOrigin,
@@ -155,8 +155,7 @@ class MyApp extends App {
 
 MyApp.getInitialProps = async ({ ctx }) => {
   return {
-    host: "https://freshcut.vercel.app",
-    shopOrigin:"fresh-greeting-card.myshopify.com"
+    host: ctx.query.host,
   };
 };
 
