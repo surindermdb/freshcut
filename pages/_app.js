@@ -155,7 +155,7 @@ class MyApp extends App {
 
 MyApp.getInitialProps = async ({ ctx }) => {
   return {
-    host: "https://freshcut.vercel.app",
+    host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
     shopOrigin:"fresh-greeting-card.myshopify.com"
   };
 };
