@@ -141,10 +141,10 @@ class MyApp extends App {
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            host: host,
-            apiKey: API_KEY,
+            host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
+            apiKey: "c565e74622748fad9d9351ddcd523f46",
             forceRedirect: true,
-            shopOrigin: shopOrigin,
+            shopOrigin: "fresh-greeting-card.myshopify.com",
           }}
         >
           {this.renderApp()}
