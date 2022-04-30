@@ -67,6 +67,8 @@ class MyApp extends App {
    * Fetch shop
    */
   async fetchShop() {
+
+    
     return new Promise(async (resolve, reject) => {
       this.setState({ fetchingShop: true });
       try {
@@ -134,15 +136,15 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, host } = this.props;
-    console.log(host);
+    console.log("===========",host);
     return (
       <AppProvider i18n={translations}>
         <Provider
           config={{
-            host: host,
-            apiKey: API_KEY,
+            host: "Z3JlZXRpbmctY2FyZDEyMy5teXNob3BpZnkuY29tL2FkbWlu",
+            apiKey: "c565e74622748fad9d9351ddcd523f46",
             forceRedirect: true,
-            shopOrigin: shopOrigin,
+            shopOrigin: "fresh-greeting-card.myshopify.com",
           }}
         >
           {this.renderApp()}

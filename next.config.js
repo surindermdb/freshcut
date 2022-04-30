@@ -37,4 +37,7 @@ module.exports = {
 
     return config;
   },
+  env:{
+    API_KEY: apiKey, HOST: host, SHOPIFY_HOST: shopifyHost
+  }
 };
